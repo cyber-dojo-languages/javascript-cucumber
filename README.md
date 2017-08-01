@@ -1,4 +1,4 @@
-# javascript-assert
+# javascript-cucumber
 
-![Build Status](https://travis-ci.org/cyber-dojo-languages/javascript-assert.svg?branch=master)
+![Build Status](https://travis-ci.org/cyber-dojo-languages/javascript-cucumber.svg?branch=master)
 
