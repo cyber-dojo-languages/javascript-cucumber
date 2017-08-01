@@ -1,4 +1,6 @@
 {
+  "display_name": "Javascript, Cucumber",
+
   "visible_filenames": [
     "hiker.feature",
     "hiker.js",
@@ -7,11 +9,10 @@
     ".jshintrc"
   ],
 
+  "image_name": "cyberdojofoundation/javascript-node_cucumber",
+
   "filename_extension" : ".js",
 
-  "tab_size": 2,
+  "tab_size": 2
 
-  "display_name": "Javascript, Cucumber",
-
-  "image_name": "cyberdojofoundation/javascript-node_cucumber"
 }
