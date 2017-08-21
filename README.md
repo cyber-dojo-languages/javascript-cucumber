@@ -5,6 +5,6 @@
 Currently broken :-(
 
 I need to do a global install of Cucumber, because
-I we want to install it when I build the image, so I can
+I want to install it when I build the image so I can
 share it among all users of the container (there may be several).
 Any ideas?
