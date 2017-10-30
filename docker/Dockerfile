@@ -15,7 +15,6 @@ WORKDIR /home/cucumber
 USER cucumber
 # reinstall npm. See https://github.com/npm/npm/issues/14232
 RUN rm -rf /usr/local/lib/node_modules/npm
-#RUN n latest
 RUN npm install cucumber
 
 USER root
