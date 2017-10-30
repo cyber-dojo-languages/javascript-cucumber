@@ -1,8 +1,8 @@
 "use strict";
 
-const assert = require('assert');
-const defineSupportCode = require('/usr/local/lib/node_modules/cucumber').defineSupportCode;
-const hiker = require('./hiker');
+var {defineSupportCode} = require('cucumber');
+var assert = require('assert');
+var hiker = require('./hiker');
 
 defineSupportCode(function (Cucumber) {
   let score;

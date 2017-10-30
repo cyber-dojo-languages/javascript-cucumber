@@ -11,12 +11,17 @@
 #NODE_VERSION=8.2.1
 NODE_VERSION=8.4.0
 
-# Use npm package 'n' to call jasmine and jshint with selected node version:
-if [ -f .jshintrc ]
-  then
-    n use ${NODE_VERSION} \
-      ${NODE_PATH}/jshint/bin/jshint --config .jshintrc *.js
-fi
+# You have to be in this folder because
+# ~/node_modules/cucumber/bin/cucumber.js
+# contains the line
+# require('../lib/cli/run.js').default();
+# Go figure!
+
+cd ~/node_modules/cucumber/bin
+
+export NODE_PATH=/home/rhino/node_modules
 
 n use ${NODE_VERSION} \
-  ${NODE_PATH}/cucumber/bin/cucumber.js --format-options '{"colorsEnabled":false}' *.feature
+  ./cucumber.js \
+  --format-options '{"colorsEnabled":false}' \
+  /tmp/sandboxes/rhino/*.feature
