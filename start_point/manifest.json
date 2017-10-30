@@ -5,8 +5,7 @@
     "hiker.feature",
     "hiker.js",
     "hiker_steps.js",
-    "cyber-dojo.sh",
-    ".jshintrc"
+    "cyber-dojo.sh"
   ],
 
   "image_name": "cyberdojofoundation/javascript-node_cucumber",
