@@ -11,17 +11,17 @@
 #NODE_VERSION=8.2.1
 NODE_VERSION=8.4.0
 
-# You have to be in this folder because
-# ~/node_modules/cucumber/bin/cucumber.js
+# You have to cd to a specific folder because
+#   ~/node_modules/cucumber/bin/cucumber.js
 # contains the line
 # require('../lib/cli/run.js').default();
 # Go figure!
 
 cd ~/node_modules/cucumber/bin
 
-export NODE_PATH=/home/rhino/node_modules
+export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
 
 n use ${NODE_VERSION} \
   ./cucumber.js \
   --format-options '{"colorsEnabled":false}' \
-  /tmp/sandboxes/rhino/*.feature
+  /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
