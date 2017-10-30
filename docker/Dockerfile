@@ -19,8 +19,8 @@ RUN rm -rf /usr/local/lib/node_modules/npm
 RUN npm install cucumber
 
 USER root
-RUN ln -s /home/cucumber/node_modules /home/rhino/node_modules
-RUN ln -s /home/cucumber/node_modules /home/skunk/node_modules
-RUN ln -s /home/cucumber/node_modules /home/whale/node_modules
+COPY symlink_node_modules.sh /tmp
+RUN chmod +x /tmp/symlink_node_modules.sh
+RUN /tmp/symlink_node_modules.sh
 
 COPY red_amber_green.rb /usr/local/bin
