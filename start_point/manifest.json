@@ -10,9 +10,9 @@
 
   "image_name": "cyberdojofoundation/javascript-node_cucumber",
 
+  "runner_choice": "stateless",
+
   "filename_extension" : ".js",
 
-  "tab_size": 2,
-
-  "runner_choice": "stateless"
+  "tab_size": 2
 }
