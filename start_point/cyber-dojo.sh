@@ -24,4 +24,4 @@ export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
 n use ${NODE_VERSION} \
   ./cucumber.js \
   --format-options '{"colorsEnabled":false}' \
-  /tmp/sandboxes/$CYBER_DOJO_AVATAR_NAME/*.feature
+  ${CYBER_DOJO_SANDBOX}/*.feature
