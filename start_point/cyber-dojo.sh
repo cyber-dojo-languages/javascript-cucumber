@@ -12,7 +12,7 @@
 NODE_VERSION=8.4.0
 
 # You have to cd to a specific folder because
-#   ~/node_modules/cucumber/bin/cucumber.js
+#   ~/node_modules/cucumber/bin/cucumber-js
 # contains the line
 # require('../lib/cli/run.js').default();
 # Go figure!
@@ -22,6 +22,6 @@ cd ~/node_modules/cucumber/bin
 export NODE_PATH=/home/$CYBER_DOJO_AVATAR_NAME/node_modules
 
 n use ${NODE_VERSION} \
-  ./cucumber.js \
+  ./cucumber-js \
   --format-options '{"colorsEnabled":false}' \
   ${CYBER_DOJO_SANDBOX}/*.feature

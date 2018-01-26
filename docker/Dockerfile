@@ -17,9 +17,6 @@ USER cucumber
 RUN rm -rf /usr/local/lib/node_modules/npm
 RUN npm install cucumber
 
-ARG dir=/home/cucumber/node_modules/cucumber/bin
-RUN mv ${dir}/cucumber-js ${dir}/cucumber.js
-
 USER root
 COPY symlink_node_modules.sh /tmp
 RUN chmod +x /tmp/symlink_node_modules.sh
