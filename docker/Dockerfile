@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/javascript-node:8.4.0
+FROM  cyberdojofoundation/javascript-node:9.4.0
 LABEL maintainer=jon@jaggersoft.com
 
 RUN adduser \
