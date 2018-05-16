@@ -1,5 +1,9 @@
 'use strict';
 
-exports.answer = function answer(a, b) {
-  return a * b;
+module.exports = {
+  answer
 };
+
+function answer(a, b) {
+  return a * b;
+}

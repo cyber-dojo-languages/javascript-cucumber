@@ -4,7 +4,7 @@ const {Given,When,Then} = require('cucumber');
 const assert = require('assert');
 const hiker = require('./hiker');
 
-var score;
+let score;
 
 Given(/^the hitch-hiker selects some tiles$/, function() {
 });
