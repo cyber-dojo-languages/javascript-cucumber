@@ -18,8 +18,6 @@ RUN rm -rf /usr/local/lib/node_modules/npm
 RUN npm install cucumber
 
 USER root
-COPY symlink_node_modules.sh /tmp
-RUN chmod +x /tmp/symlink_node_modules.sh
-RUN /tmp/symlink_node_modules.sh
+RUN ln -s /home/cucumber/node_modules /home/sandbox/node_modules
 
 COPY red_amber_green.rb /usr/local/bin
