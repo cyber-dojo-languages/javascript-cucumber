@@ -4,7 +4,7 @@ LABEL maintainer=jon@jaggersoft.com
 RUN adduser \
   --disabled-password \
   --gecos "" \
-  --ingroup cyber-dojo \
+  --ingroup sandbox \
   --home /home/cucumber \
   cucumber
 
