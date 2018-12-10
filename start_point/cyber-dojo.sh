@@ -17,6 +17,12 @@
 #NODE_VERSION=9.10.1
 NODE_VERSION=10.1.0
 
+# Turn off node warnings to get rid of
+# (node:28) ExperimentalWarning: The fs.promises API is experimental
+# which curently causes cyber-dojo to load stderr instead of
+# stdout when green
+export NODE_NO_WARNINGS=1
+
 if [ -f .jshintrc ]; then
   n use $NODE_VERSION \
     /usr/lib/node_modules/jshint/bin/jshint \
