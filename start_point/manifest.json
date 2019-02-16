@@ -11,8 +11,6 @@
 
   "image_name": "cyberdojofoundation/javascript-node_cucumber",
 
-  "runner_choice": "stateless",
-
   "filename_extension": [ ".js", ".feature" ],
 
   "tab_size": 2
