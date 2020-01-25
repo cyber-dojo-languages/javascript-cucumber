@@ -1,22 +1,17 @@
 {
-  "red":
-    {
-      "filename": "hiker.feature",
-      "from": "6 times 9",
-      "to": "6 times 54321"
-    }
-  ,
-  "green":
-    {
-      "filename": "hiker.feature",
-      "from": "6 times 9",
-      "to": "6 times 7"
-    }
-  ,
-  "amber":
-    {
-      "filename": "hiker.feature",
-      "from": "6 times 9",
-      "to": "6 blah 9"
-    }
+  "red": {
+    "filename": "hiker.feature",
+    "from": "6 times 9",
+    "to": "6 times 54321"
+  },
+  "amber": {
+    "filename": "hiker.feature",
+    "from": "6 times 9",
+    "to": "6 blah 9"
+  },
+  "green": {
+    "filename": "hiker.feature",
+    "from": "6 times 9",
+    "to": "6 times 7"
+  }
 }

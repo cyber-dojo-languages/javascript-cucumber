@@ -15,7 +15,8 @@
 #NODE_VERSION=8.4.0
 #NODE_VERSION=9.4.0
 #NODE_VERSION=9.10.1
-NODE_VERSION=10.1.0
+#NODE_VERSION=10.1.0
+NODE_VERSION=13.7.0
 
 # Turn off node warnings to get rid of
 # (node:28) ExperimentalWarning: The fs.promises API is experimental
