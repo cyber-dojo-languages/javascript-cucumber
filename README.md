@@ -1,4 +1,3 @@
-
 [![CircleCI](https://circleci.com/gh/cyber-dojo-languages/javascript-cucumber.svg?style=svg)](https://circleci.com/gh/cyber-dojo-languages/javascript-cucumber)
 
 ## display_name="Javascript, Cucumber"
