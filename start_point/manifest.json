@@ -1,17 +1,15 @@
 {
   "display_name": "Javascript, Cucumber",
-
-  "visible_filenames": [
+  "image_name": "cyberdojofoundation/javascript-node_cucumber",
+  "visible_filenames":
+  [
     "hiker.feature",
     "hiker.js",
     "hiker_steps.js",
     "cyber-dojo.sh",
     ".jshintrc"
   ],
-
-  "image_name": "cyberdojofoundation/javascript-node_cucumber",
-
   "filename_extension": [ ".js", ".feature" ],
-
+  "max_seconds": 10,
   "tab_size": 2
 }
