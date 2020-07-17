@@ -1,23 +1,18 @@
-FROM  cyberdojofoundation/javascript-node
+FROM  cyberdojofoundation/javascript-node:6d169e9
 LABEL maintainer=jon@jaggersoft.com
 
-RUN adduser \
-  --disabled-password \
-  --gecos "" \
-  --ingroup sandbox \
-  --home /home/cucumber \
-  cucumber
+# https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md
+# Says
+# <quote>
+# Note on global installs: Cucumber does not work when installed globally
+# because cucumber needs to be required in your support files and globally
+# installed modules cannot be required.
+# </quote>
+# So do not do $ npm install -global cucumber
 
-COPY package.json /home/cucumber
-RUN chown cucumber /home/cucumber/package.json
-WORKDIR /home/cucumber
-
-USER cucumber
-# reinstall npm. See https://github.com/npm/npm/issues/14232
-RUN rm -rf /usr/local/lib/node_modules/npm
+USER sandbox
+WORKDIR /home/sandbox
 RUN npm install cucumber
-
-USER root
-RUN ln -s /home/cucumber/node_modules /home/sandbox/node_modules
+ENV NODE_PATH=/home/sandbox/node_modules/
 
 COPY red_amber_green.rb /usr/local/bin
