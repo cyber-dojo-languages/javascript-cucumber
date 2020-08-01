@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/javascript-node:6d169e9
+FROM  cyberdojofoundation/javascript-node:29eb2ed
 LABEL maintainer=jon@jaggersoft.com
 
 # https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md
