@@ -1,4 +1,4 @@
-FROM  cyberdojofoundation/javascript-node:8afa909
+FROM ghcr.io/cyber-dojo-languages/javascript-node:3221b9d
 LABEL maintainer=jon@jaggersoft.com
 
 # https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md
@@ -12,7 +12,7 @@ LABEL maintainer=jon@jaggersoft.com
 
 USER sandbox
 WORKDIR /home/sandbox
-RUN npm install cucumber
+RUN npm install @cucumber/cucumber
 ENV NODE_PATH=/home/sandbox/node_modules/
 
 COPY red_amber_green.rb /usr/local/bin
