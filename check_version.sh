@@ -1,11 +1,13 @@
-#!/bin/bash -Eeu
+#!/usr/bin/env bash
+set -Eeu
+
 readonly MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 readonly REGEX="image_name\": \"(.*)\""
 readonly JSON=`cat ${MY_DIR}/docker/image_name.json`
 [[ ${JSON} =~ ${REGEX} ]]
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
-readonly EXPECTED=11.2.0
+readonly EXPECTED=12.7.0
 readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'npx @cucumber/cucumber --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
