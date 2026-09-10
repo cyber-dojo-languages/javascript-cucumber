@@ -7,7 +7,7 @@ readonly JSON=`cat ${MY_DIR}/docker/image_name.json`
 [[ ${JSON} =~ ${REGEX} ]]
 readonly IMAGE_NAME="${BASH_REMATCH[1]}"
 
-readonly EXPECTED=12.9
+readonly EXPECTED=13.2
 readonly ACTUAL=$(docker run --rm -i ${IMAGE_NAME} sh -c 'npx @cucumber/cucumber --version')
 
 if echo "${ACTUAL}" | grep -q "${EXPECTED}"; then
