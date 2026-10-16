@@ -1,4 +1,4 @@
-FROM ghcr.io/cyber-dojo-languages/javascript-node:04531dc
+FROM ghcr.io/cyber-dojo-languages/javascript-node:f2d88b5
 LABEL maintainer=jon@jaggersoft.com
 
 # https://github.com/cucumber/cucumber-js/blob/master/docs/cli.md
@@ -14,4 +14,11 @@ USER sandbox
 WORKDIR /home/sandbox
 RUN npm install @cucumber/cucumber
 ENV NODE_PATH=/home/sandbox/node_modules/
+
+# /versions.json belongs to root, so the record is written as root, and the
+# image then goes back to the sandbox user it ran as before.
+USER root
+COPY install.sh /tmp/
+RUN /tmp/install.sh && rm /tmp/install.sh
+USER sandbox
 
